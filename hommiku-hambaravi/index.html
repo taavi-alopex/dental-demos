@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Hommiku Hambaravi — Broneeri aeg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+      colors: {
+        clinic: { 50: '#f0fdfa', 100: '#ccfbf1', 200: '#99f6e4', 500: '#14b8a6', 600: '#0d9488', 700: '#0f766e', 800: '#115e59', 900: '#134e4a' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  .grain{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E")}
+  .booking-glow{box-shadow:0 0 80px -20px rgba(20,184,166,0.15)}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+  .fade-up{animation:fadeUp .6s ease-out both}.fade-up-d1{animation-delay:.1s}.fade-up-d2{animation-delay:.2s}.fade-up-d3{animation-delay:.3s}
+  html{scroll-behavior:smooth}
+</style>
+</head>
+<body class="bg-white font-sans text-gray-900 antialiased">
+<div class="fixed top-4 right-4 z-50 bg-clinic-600 text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg shadow-clinic-600/25">DEMO</div>
+<nav class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-xl border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div class="font-bold text-lg tracking-tight">Hommiku Hambaravi</div>
+    <div class="hidden sm:flex items-center gap-8 text-sm text-gray-500">
+      <a href="#teenused" class="hover:text-gray-900 transition">Teenused</a>
+      <a href="#broneeri" class="hover:text-gray-900 transition">Broneerimine</a>
+      <a href="#kontakt" class="hover:text-gray-900 transition">Kontakt</a>
+    </div>
+    <a href="#broneeri" class="bg-gray-900 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-800 transition">Broneeri aeg</a>
+  </div>
+</nav>
+<section class="relative min-h-[85vh] flex items-center grain bg-gray-950 overflow-hidden pt-16">
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-clinic-900/20"></div>
+  <div class="relative max-w-6xl mx-auto px-6 py-24 w-full">
+    <div class="max-w-2xl">
+      <div class="fade-up inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-sm text-clinic-200 mb-8">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>Pärnu &mdash; Pikk tn 11-14
+      </div>
+      <h1 class="fade-up fade-up-d1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-6">Hommiku Hambaravi &mdash;<br>broneeri aeg</h1>
+      <p class="fade-up fade-up-d2 text-lg text-gray-400 max-w-lg mb-10 leading-relaxed">Valige endale sobiv aeg juba täna. Kinnitame teie broneeringu mõne minutiga.</p>
+      <div class="fade-up fade-up-d3 flex flex-wrap gap-4">
+        <a href="#broneeri" class="inline-flex items-center gap-2 bg-clinic-600 hover:bg-clinic-500 text-white font-semibold px-6 py-3.5 rounded-xl transition shadow-lg shadow-clinic-600/25"><i data-lucide="calendar" class="w-5 h-5"></i>Broneeri aeg</a>
+        <a href="tel:+3725060847" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white font-medium px-6 py-3.5 rounded-xl transition border border-white/10"><i data-lucide="phone" class="w-5 h-5"></i>+372 506 0847</a>
+      </div>
+    </div>
+    <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-12 w-80 h-80 rounded-full bg-clinic-600/5 border border-clinic-600/10 blur-sm"></div>
+    <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-24 w-64 h-64 rounded-full bg-clinic-600/8 border border-clinic-600/10"></div>
+  </div>
+</section>
+<section class="border-b border-gray-100 bg-gray-50/50">
+  <div class="max-w-6xl mx-auto px-6 py-5 flex flex-wrap items-center justify-center gap-x-12 gap-y-3 text-sm text-gray-500">
+    <div class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-clinic-600"></i>Litsentseeritud kliinik</div>
+    <div class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-clinic-600"></i>Mugavad lahtiolekuajad</div>
+    <div class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-clinic-600"></i>Kogenud meeskond</div>
+  </div>
+</section>
+<section id="teenused" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-xl mb-16">
+      <p class="text-sm font-semibold text-clinic-600 mb-3 tracking-wide uppercase">Teenused</p>
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Kuidas saame aidata</h2>
+      <p class="text-gray-500 text-lg">Kaasaegne tehnika ja kogenud spetsialistid kõigi hambaraviprotseduuride jaoks.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="scan" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Diagnostika ja kontroll</div></div>
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="sparkles" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Professionaalne hügieen</div></div>
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="shield-check" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Kaariese ravi</div></div>
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="crown" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Proteesimine</div></div>
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="pin" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Implantoloogia</div></div>
+      <div class="group p-6 rounded-2xl border border-gray-100 bg-white hover:border-clinic-200 hover:shadow-md hover:shadow-clinic-600/5 transition-all duration-200"><div class="w-10 h-10 rounded-xl bg-clinic-50 flex items-center justify-center mb-4 group-hover:bg-clinic-100 transition-colors"><i data-lucide="smile" class="w-5 h-5 text-clinic-600"></i></div><div class="font-medium text-[15px]">Hammaste valgendamine</div></div>
+    </div>
+  </div>
+</section>
+<section id="broneeri" class="py-24 bg-gray-50/80">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="text-sm font-semibold text-clinic-600 mb-3 tracking-wide uppercase">Broneerimine</p>
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Valige endale sobiv aeg</h2>
+      <p class="text-gray-500 text-lg max-w-md mx-auto">Valige vaba aeg kalendrist &mdash; kinnituse saate automaatselt.</p>
+    </div>
+    <div class="bg-white rounded-2xl border border-gray-200 booking-glow overflow-hidden">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/Sv013HlhFFkGTACJYN9F" style="width:100%;min-height:650px;border:none;overflow:hidden" scrolling="no" id="Sv013HlhFFkGTACJYN9F_1773860479637"></iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+    </div>
+  </div>
+</section>
+<section id="kontakt" class="py-24">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <div>
+        <p class="text-sm font-semibold text-clinic-600 mb-3 tracking-wide uppercase">Kontakt</p>
+        <h2 class="text-3xl font-bold tracking-tight mb-6">Võtke meiega ühendust</h2>
+        <div class="space-y-5 text-gray-600">
+          <div class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0"></i><div><div class="font-medium text-gray-900">Hommiku Hambaravi OÜ</div><div>Pikk tn 11-14, Pärnu</div></div></div>
+          <div class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0"></i><div><a href="tel:+3725060847" class="hover:text-clinic-600 transition">+372 506 0847</a></div></div>
+          <div class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0"></i><div><a href="mailto:ivar.maasik@gmail.com" class="hover:text-clinic-600 transition">ivar.maasik@gmail.com</a></div></div>
+          <div class="flex gap-3"><i data-lucide="globe" class="w-5 h-5 text-gray-400 mt-0.5 flex-shrink-0"></i><div><a href="https://hommikuhambaravi.ee" target="_blank" class="hover:text-clinic-600 transition">hommikuhambaravi.ee</a></div></div>
+        </div>
+      </div>
+      <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-clinic-600 flex items-center justify-center"><i data-lucide="calendar-check" class="w-5 h-5 text-white"></i></div>
+          <div><div class="font-semibold">Kiire broneerimine</div><div class="text-sm text-gray-500">Valige aeg veebis</div></div>
+        </div>
+        <a href="#broneeri" class="mt-4 w-full inline-flex items-center justify-center gap-2 bg-gray-900 text-white font-medium px-6 py-3 rounded-xl hover:bg-gray-800 transition"><i data-lucide="arrow-up" class="w-4 h-4"></i>Broneeri aeg</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="border-t border-gray-100 py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-gray-400">
+    <div>Hommiku Hambaravi &mdash; Demo leht</div>
+    <div class="flex items-center gap-1">Powered by <a href="https://alopex.digital" class="text-clinic-600 hover:text-clinic-500 ml-1 font-medium">Alopex Digital</a></div>
+  </div>
+</footer>
+<script>lucide.createIcons();</script>
+</body>
+</html>
